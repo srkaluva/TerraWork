@@ -13,9 +13,9 @@ resource "aws_key_pair" "wp_auth" {
 
 resource "aws_instance" "wp_dev" {
 	instance_type="t2.micro"
-	ami="ami-48e71a35"
+	ami="ami-0c322300a1dd5dc79"
 	key_name="${aws_key_pair.wp_auth.id}"
 #	vpc_security_group_ids=["${aws_security_group.default.id}"]
-        vpc_security_group_ids=["sg-0236bfbe469200da8"]
-	subnet_id="subnet-0c72d23d2866b7ad5"
+        vpc_security_group_ids=["sg-0440c3e6cfe8b8031"]
+	subnet_id="subnet-0c39cf41"
 }
