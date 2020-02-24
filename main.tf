@@ -5,7 +5,7 @@ provider "aws" {
 
 
 resource "aws_key_pair" "wp_auth" {
-	key_name="jenkins2"
+	key_name="terraform"
 	public_key="${file(var.pub_key_path)}"
 }
 
